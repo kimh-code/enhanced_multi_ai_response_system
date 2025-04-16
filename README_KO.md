@@ -48,6 +48,8 @@ pip install -r requirements.txt
 ```
 
 ## ⚙️ 설정
+
+### 설정 1: config.py 사용하기
 `config.py` 파일을 생성하고 API 키를 설정하세요:
 
 ```python
@@ -129,6 +131,16 @@ def get_model_cost(model_name):
     else:
         # 기본 대체 비용
         return {"prompt": 0.008, "completion": 0.024}
+```
+### 옵션 2: .env 파일 사용하기 (개발 환경에 권장)
+환경 관리를 더 쉽게 하기 위해 .env 파일을 사용할 수 있습니다:
+```bash
+1. 프로젝트 루트 디렉토리에 .env 파일을 생성합니다
+2. API 키를 다음과 같이 추가합니다:
+ANTHROPIC_API_KEY=your_anthropic_api_key
+OPENAI_API_KEY=your_openai_api_key
+PERPLEXITY_API_KEY=your_perplexity_api_key
+3. 애플리케이션이 python-dotenv를 사용하여 이러한 변수를 자동으로 로드합니다
 ```
 
 ## 🚀 사용 방법
