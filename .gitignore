@@ -1,0 +1,42 @@
+# 가상환경
+middleware_env/
+venv/
+env/
+ENV/
+
+# Python 캐시 파일
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+
+# 빌드 및 배포 파일
+build/
+dist/
+*.spec
+
+# 로그 및 데이터 파일
+logs/
+*.log
+token_usage.json
+
+# 환경 변수 파일 (주의: 민감한 정보가 들어있으므로 일반적으로 제외합니다)
+.env
+.env.*
+
+# IDE 설정 파일
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# 프로젝트 특정 파일
+# 프로젝트에 특화된 다른 파일들을 여기에 추가하세요
