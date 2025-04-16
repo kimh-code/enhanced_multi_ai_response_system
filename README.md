@@ -48,6 +48,8 @@ pip install -r requirements.txt
 ```
 
 ## ⚙️ Configuration
+
+### Option 1: Using config.py
 Create a `config.py` file with your API keys:
 
 ```python
@@ -129,6 +131,17 @@ def get_model_cost(model_name):
     else:
         # Default fallback costs
         return {"prompt": 0.008, "completion": 0.024}
+```
+
+### Option 2: Using .env file (Recommended for development)
+Alternatively, you can use a `.env` file for easier environment management:
+```bash
+1. Create a `.env` file in the project root directory
+2. Add your API keys:
+ANTHROPIC_API_KEY=your_anthropic_api_key
+OPENAI_API_KEY=your_openai_api_key
+PERPLEXITY_API_KEY=your_perplexity_api_key
+3. The application will automatically load these variables using python-dotenv
 ```
 
 ## 🚀 Usage
